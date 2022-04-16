@@ -1,3 +1,19 @@
 #commands used in the class for configuring PHP and MYSQL based application
 
 Installed a Centos 7.9 VM in azure. using the default options
+
+yum install httpd 
+systemctl start httpd
+systemctl status httpd
+
+open port 80 in NSG's inboud rules
+netstat -ntlp
+curl -sSLO https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+md5sum mysql80-community-release-el7-5.noarch.rpm
+rpm -ivh mysql80-community-release-el7-5.noarch.rpm
+sudo yum install mysql-server
+
+iptables -L #this is to validate if there are any existing firewall rules on the OS side in Linux
+
+systemctl start mysqld
+systemctl status mysqld
