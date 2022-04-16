@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$connect = mysqli_connect("localhost", "root", "", "testing");
+$connect = mysqli_connect("20.216.32.181", "dbuser2", "Ind@9999", "ecomdb");
 
 if(isset($_POST["add_to_cart"]))
 {
