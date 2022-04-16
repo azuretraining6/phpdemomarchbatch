@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$connect = mysqli_connect("nksmysqldemo.mysql.database.azure.com", "mysqroot", "Ind@9999", "ecomdb");
+$connect = mysqli_connect("nksmysqldemo.mysql.database.azure.com", "dbuser2", "Ind@9999", "ecomdb");
 
 if(isset($_POST["add_to_cart"]))
 {
